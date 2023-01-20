@@ -5,8 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Snake-games</title>
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
+
+    <canvas id="canvas"> </canvas>
+    <div id="high-score"></div>
+    <div id="score"></div>
+
+    <div id="control-keys">
+
+        <div id="control-head">
+            Controls
+        </div>
+
+        <div> Left  👉  A or ⬅️ </div>
+        <div> Right 👉 D or ➡️ </div>
+        <div> Top  👉W or ⬆️ </div>
+        <div> Bottom  👉Z⬇️⬆ or  </div>
+
+
+    </div>
+
+    <div id="controls">
+        <button id="show-grid"></button>
+        <button id="pause" class="pause-active"></button>
+        <button id="reset"></button>
+    </div>
+
+    <div id="play"> Press Control Key to Start<span style="font: size 3em;">⌨️</span></div>
+
+
+
+    <script src="app.js"></script>
+
     
 </body>
 </html>

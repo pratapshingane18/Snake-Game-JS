@@ -16,5 +16,14 @@
     const highScoreEl = document.getElementById("high-score");
     const pauseEl = document.getElementById("pause");
     const playEl = document.getElementById("play");
+     
+    let score = 0;
 
+    const setScore = () => {
+      scoreEl.innerHTML = `Score 👉 ${score}`;
+      if (score >= localStorage.getItem("highScore"))
+        localStorage.setItem("highScore", score);
+      highScoreEl.innerHTML = `HI SCORE 🚀 ${localStorage.getItem("highScore")}`;
+    };
+  
 })

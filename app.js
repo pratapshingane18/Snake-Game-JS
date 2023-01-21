@@ -1,20 +1,20 @@
-(function(){
-    const canvas = document.getElementById('canvas');
-    const ctx = canvas.getContext('2d');
 
-    // Canvas Size
+(function () {
+    const canvas = document.getElementById("canvas");
+    const ctx = canvas.getContext("2d");
+  
+    // canvas size
     const canvasSize = 680;
-    const w = (canvas.width= canvasSize);
+    const w = (canvas.width = canvasSize);
     const h = (canvas.height = canvasSize);
-    const canvasStrokeColor = "rgba(211,211,211,0,0.19)";
-
-    // Getting Elemnts 
-    const scoreE1 = document.getElementById("score");
-    const resetE1 = document.getElementById("reset");
-    const showGridE1 = document.getElementById("show-grid");
-    const highScoreE1 = document.getElementById("high-score");
-    const pauseE1 = document.getElementById("pause");
-    const playE1 = document.getElementById("play");
-
+    const canvasFillColor = "#000d36";
+    const canvasStrokeColor = "rgba(211, 211, 211, 0.19)";
+  
+    const scoreEl = document.getElementById("score");
+    const resetEl = document.getElementById("reset");
+    const showGridEl = document.getElementById("show-grid");
+    const highScoreEl = document.getElementById("high-score");
+    const pauseEl = document.getElementById("pause");
+    const playEl = document.getElementById("play");
 
 })

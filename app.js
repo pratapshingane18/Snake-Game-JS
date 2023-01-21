@@ -25,5 +25,48 @@
         localStorage.setItem("highScore", score);
       highScoreEl.innerHTML = `HI SCORE 🚀 ${localStorage.getItem("highScore")}`;
     };
+
+     // frame rate
+  const frameRate = 9.5;
+
+  // grid padding
+  const pGrid = 4;
+  // grid width
+  const grid_line_len = canvasSize - 2 * pGrid;
+  //  cell count
+  const cellCount = 44;
+  // cell size
+  const cellSize = grid_line_len / cellCount;
+
+  let gameActive;
+
+   // this will generate random color for head
+   const randomColor = () => {
+    let color;
+    let colorArr = ["#426ff5", "#42f5e3"];
+    color = colorArr[Math.floor(Math.random() * 2)];
+    return color;
+  };
+
+  const head = {
+    x: 2,
+    y: 1,
+    color: randomColor(),
+    vX: 0,
+    vY: 0,
+    draw: () => {
+      ctx.fillStyle = head.color;
+      ctx.shadowColor = head.color;
+      ctx.shadowBlur = 2.5;
+      ctx.fillRect(
+        head.x * cellSize + pGrid,
+        head.y * cellSize + pGrid,
+        cellSize,
+        cellSize
+      );
+    },
+  };
+
+
   
 })
